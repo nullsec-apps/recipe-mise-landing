@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Figtree', sans-serif;
+  letter-spacing: -0.03em;
+  -webkit-font-smoothing: antialiased;
+}
+.font-serif-display {
+  font-family: 'Instrument Serif', serif;
+  letter-spacing: 0;
+}
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (min-width: 400px) {
+  .xs\:inline { display: inline; }
+  .xs\:hidden { display: none; }
+}
